@@ -34,14 +34,7 @@ with(subset.data,{
         
         }
      )
-
-        
-
-
-
-
-
 dev.off()
 
-#file.remove("household_power_consumption.txt")
+file.remove("household_power_consumption.txt")
 
