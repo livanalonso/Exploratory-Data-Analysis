@@ -1,12 +1,12 @@
 ##Exploratory-Data-Analysis
 =========================
 
-### Course Project1
+### Course Project1 contains:
 
-Contains R source code:
+- R source code:
 plot1.R, plot2.R, plot3.R and plot4.R
 
-Figures:
+- Figures:
 plot1.png, plot2.png, plot3.png and plot4.png
 
 
