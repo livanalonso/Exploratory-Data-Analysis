@@ -18,6 +18,7 @@ data$Date.Time<-strptime(paste(data$Date,data$Time, sep=" "),"%d/%m/%Y %H:%M:%S"
 data$Date<-as.Date(as.Date(data$Date,"%d/%m/%Y"))
 subset.data<-subset(data,as.POSIXct(Date)==as.POSIXct(as.Date("01/02/2007","%d/%m/%Y")) | as.POSIXct(Date)==as.POSIXct(as.Date("02/02/2007","%d/%m/%Y")))
 
+# Plot data
 png(file="plot1.png",width = 480, height = 480)
 with(subset.data,hist(Global_active_power,xlab="Global Active Power (kilowatts)",ylab="Frequency",main="Global Active Power",col="red"))
 dev.off()
