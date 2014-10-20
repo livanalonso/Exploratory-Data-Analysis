@@ -1,0 +1,15 @@
+library(ggplot2)
+
+# Download the data of project
+fileUrl<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
+download.file(fileUrl,destfile="dataset.zip",method="curl")
+        
+# unzip data
+unzip("dataset.zip")
+
+# Remove zip file
+file.remove("dataset.zip")
+
+# Reading file
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
